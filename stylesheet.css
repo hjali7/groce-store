@@ -40,6 +40,14 @@ body{
     color:var(--black);
     border-radius: .5rem;
     padding:.8rem 3rem;
+    background: none;
+}
+
+.btn:hover{
+    background: var(--orange);
+    color:#fff;
+    border: none;
+    box-shadow: 2px 2px 15px #666;
 }
 
 .header{
@@ -134,12 +142,17 @@ body{
 
 .header .shopping-cart{
     position: absolute;
-    right: 2rem;top:110%;
+    right:-110%;top:110%;
     padding:1rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     width: 30rem;
     background: #fff;
+}
+
+.header .shopping-cart.active{
+    right:2rem;
+    transition: .5s linear;
 }
 
 .header .shopping-cart .box{
@@ -186,5 +199,138 @@ body{
     text-align: center;
 }
 
+.header .shopping-cart .btn{
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin:1rem;
+}
+
+.header .login-form{
+    position: absolute;
+    right: -110%;top:110%;
+    text-align: center;
+    background: #fff;
+    padding:2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    width: 30rem;
+}
+
+.header .login-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .login-form h3{
+    color:var(--black);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.header .login-form .box{
+    margin:.7rem 0;
+    background: #fff;
+    border-radius: .5rem;
+    padding:1rem;
+    color:var(--black);
+    font-size: 1.6rem;
+    text-transform: none;
+    width: 100%;
+}
+
+.header .login-form p{
+    font-size: 1.4rem;
+    padding:.5rem 0;
+    color:var(--light-color);
+}
+
+.header .login-form a{
+    color:var(--orange);
+    text-decoration: underline;
+    font-size:1.5rem;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding:2rem;
+    }
+    .header .search-form{
+        width: 90%;
+    }
+}
+
+@media(max-width:768px){
+    .header .navbar{
+        position: absolute;
+        right:-110%;top:110%;
+        background: #fff;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        width: 30%;
+    }
+
+    .header .search-form{
+        width: 90%;
+    }
+
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar a{
+        display: block;
+        margin:2rem 2.5rem;
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .header .search-form{
+        width: 90%;
+    }
+}
