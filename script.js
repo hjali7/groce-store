@@ -38,22 +38,24 @@ window.addEventListener('scroll',()=>{
     navBar.classList.remove('active');
 });
 
+
 var swiper = new Swiper(".product-slider", {
-    loop:true,
-    spaceBetween: 20,
-    autoplay: {
-        delay: 6000,
-        disableOnInteraction:false,
+  loop:true,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 7500,
+    disableOnInteraction: false ,
+  },
+  centeredSlides : true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
     },
-    breakpoints: {
-      0: {
-        slidesPerView:1,
-      },
-      768: {
-        slidesPerView:2,
-      },
-      1020: {
-        slidesPerView: 3,
-      },
+    768: {
+      slidesPerView: 2,
     },
-  });
+    1020: {
+      slidesPerView: 3,
+    },
+  },
+});
