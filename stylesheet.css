@@ -481,7 +481,7 @@ section{
 
 .blogs .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(26rem, 1fr));
+    grid-template-columns: repeat(auto-fit , minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -541,17 +541,67 @@ section{
     padding: .5rem 0;
 }
 
+/* footer */
 
+.footer{
+    background: #fff;
+}
 
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(25rem , 1fr));
+    gap:1.5rem;
+}
 
+.footer .container .box h3{
+    font-size: 2.5rem;
+    color:var(--black);
+    padding: 1rem 0;
+}
 
+.footer .container .box h3 i{
+    color: var(--orange);
+}
 
+.footer .container .box p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
 
+.footer .container .box .links{
+    padding:1rem 0 ;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    display: block;
+}
 
+.footer .container .box .links i{
+    color:var(--orange);
+    padding-right: .5rem;
+}
 
+.footer .container .box .links:hover i{
+    padding-right: 2rem;
+}
 
+.footer .container .box .share a {
+    height: 4rem ;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color:var(--black);
+    margin-left: .2rem;
+    background: #ccc;
+    text-align: center;
+}
 
-
+.footer .container .box .share a:hover{
+    background: var(--orange);
+    color:#fff;
+}
 
 
 
