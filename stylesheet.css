@@ -603,7 +603,39 @@ section{
     color:#fff;
 }
 
+.footer .container .box  .email{
+    background:#eee;
+    padding: 1rem;
+    border-radius: .5rem;
+    color:var(--black);
+    text-transform: none;
+    font-size: 1.6rem;
+    width: 100%;
+}
 
+.footer .container .box .btn{
+    margin:2rem 0;
+    width: 100%;
+}
+
+.footer .container .box .payment-img{
+    cursor: pointer;
+    height: 3rem;
+    margin-top: 2rem;
+}
+
+.credit{
+    font-size: 2rem;
+    text-align: center;
+    margin-top:2rem;
+    border-top: .5rem solid #eee;
+    padding: 1rem;
+    padding-top: 2.5rem;
+}
+
+.credit span{
+    color:var(--orange)
+}
 
 
 
@@ -670,4 +702,8 @@ section{
     .heading{
         font-size: 2.5rem;
     }
+    .footer{
+        text-align: center;
+    }
+
 }
